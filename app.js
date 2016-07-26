@@ -54,7 +54,7 @@ app.use(function(err, req, res, next) {
     });
 });
 
-app.listen(80,function(){
+app.listen(7001,function(){
 	console.log('listening at localhost:3000')
     console.log(path.join(__dirname, 'public'))
 })
