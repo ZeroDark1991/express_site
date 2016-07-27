@@ -6,10 +6,11 @@ import { map } from '../util'
 // router.get('/',(req, res, next)=>{
 // 	res.render('home',{title: '首页'})
 // })
+const env = process.env.NODE_ENV || 'development'
 
 const index = {
 	get: function(req,res){
-		res.render('home', { title: 'home' })
+		res.render('home', { title: env })
 	}
 }
 
